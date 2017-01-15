@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Math with Friends</title>
+
+        <!-- Added a link to Bootstrap-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+       <link href="https://fonts.googleapis.com/css?family=Exo:700,800i" rel="stylesheet">
+       <!-- Firebase Reference -->
+        <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+
+       <script type="text/javascript" async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+        <!-- Added link to the jQuery Library --> 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+            <style type="text/css">
+            div#currentplayer {
+                display: inline-block;
+                background-color: #f0ad4e;
+                color: #f5f5f5;
+                font-style: bold;
+                font-size: 25px;
+                padding: 18px;
+                border-radius: 10px;
+            }
+            #signOut {
+              padding: 10px 20px;
+              cursor: pointer;
+              color: #fff;
+              border-radius: 6px;
+              border: none;
+              background-color: rgb(255,165, 0);
+              border-bottom: 4px solid rgb(209,135, 0);
+              margin-bottom: 20px;
+              margin-left: 8px;
+              float: right;
+            }
+            #start {
+              padding: 10px 20px;
+              cursor: pointer;
+              color: #fff;
+              border-radius: 6px;
+              border: none;
+              background-color: rgb(255,165, 0);
+              border-bottom: 4px solid rgb(209,135, 0);
+              margin-bottom: 20px;
+              margin-left: 8px;
+              margin: 0 auto;
+            }
+            #reset{
+              padding: 10px 20px;
+              cursor: pointer;
+              color: #fff;
+              border-radius: 6px;
+              border: none;
+              background-color: rgb(255,165, 0);
+              border-bottom: 4px solid rgb(209,135, 0);
+              margin-bottom: 20px;
+              margin-left: 8px;
+              float: right;
+            }
+
+            h3 {
+              color:rgb(243,251,255);
+            }
+            
+            h2 {
+            color:rgb(243,251,255);
+            }
+
+            h4 {
+            color:rgb(243,251,255);
+            }
+            
+            </style>
+
+        <script type="text/javascript" src="assets/javascript/mathtriviasignin.js"></script>
+    
+    </head>
+
+<body>
+
+    <div >
+        <h1>MATH <span id="blue">with Friends</span></h1>
+    </div>
+
+<div class="body-gradient">
+        <div class="container">
+          <button id="signOut">Sign Out</button>
+          <div id="orangesection">
+                <div id="searchbox">
+                    <div id="wrapper">
+                    
+                        <h2 style="padding-top:30px;">Will you be the Math King?</h2>
+                        <br>
+                        
+                        <div id="currentplayer">
+                        </div>
+                        <div id="subwrapper">
+                            <h3>How to Play</h3>
+                            <h4>Compete with friends for the number one spot! Solve all ten problems by finding the solution for x.</h4>
+                            <br><br>
+                            <button id="start">Begin</button>
+                        </div>
+                        <div id="leaderboard">
+
+                        </div>
+                    </div>
+
+                </div>
+          </div>
+    </div>
+</div>
+
+
+
+    <div class="footer">
+      <div >
+          <p>&copy; Copyright 2017</p>
+      </div>
+    </div>
+
+<script type="text/javascript" src="assets/javascript/mathtrivia.js"></script>
+<script>
+  $('#reset').hide();
+</script>
+    
+</body>
+</html>

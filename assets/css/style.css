@@ -1,0 +1,160 @@
+html, body {
+  background: url(../images/background-graph.jpg) no-repeat center center;
+    background-size: cover;
+    height: 1000px;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+.body-gradient {
+  
+  margin: 20px 0 20px 0;
+  padding: 0;
+/*  background-color: rgba(255,165,0, 0.4);*/
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(62, 136, 247, 1));
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+#submitAnswer {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(255,165, 0);
+  border-bottom: 4px solid rgb(209,135, 0);
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
+
+.h1, h1 {
+  font-size: 75px;
+  color: rgb(255,165,0);
+  line-height: .2;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px grey;
+  margin-left: 40px;
+  margin-bottom: 0;
+  margin-top: 125px;
+  padding-right: 0;
+  font-family: 'Exo', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#blue {
+  color: rgb(62, 136, 247);
+}
+
+#user-form label {
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+#orangesection {
+      margin: 30px;
+/*  width: 350px;
+  margin: 0 auto;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  background-color: orange;
+  padding: 0;
+  border-radius: 10px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+#user-form {
+  margin-top:0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#searchbox {
+  width: 550px;
+  height: 500px;
+  text-align: center;
+  background-color: rgba(62, 136, 247, 0.7); /*used rgba to add opacity*/
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 15px;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0;
+    margin-left: 0;
+    margin: 0 auto;
+}
+
+input#submit-user, a#add-user  {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: orange;
+  border: 2px solid #ffffff;
+  letter-spacing: 1px; 
+  margin: 15px;
+  padding: 10px 20px 10px;
+  max-width: 330px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 5px 9px #999;
+}
+
+input#submit-user:hover, a#add-user:hover  {
+  color: orange;
+  background-color: rgb(2, 161, 225);
+  border: 2px solid orange;
+  font-style: bold;
+/*  text-shadow: 2px 2px 2px grey;*/
+}
+
+input#submit-user:active, a#add-user:active {
+  background-color: #ffffff;
+  box-shadow: 5px 5px #666;
+  transform: translateY(4px);
+}
+
+
+div.footer {
+    max-width: 100%;
+    color: orange;
+    font-size: 16px;
+    height: 85px;
+    line-height: 65px;
+    text-align: center;
+}
+
+a#mathtest{
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 120px;
+} 
+
+.selectuser {
+  background-color: rgba(255, 165, 0, 1)
+}
+
+#leaderboard {
+  background-color: rgba(239, 245, 254, 1)
+}
+
+#currentplayer {
+  text-shadow: 2px 2px 5px grey;
+  background-color: rgba(240, 173, 78, 0)
+}
