@@ -1,12 +1,12 @@
 // Initialize Firebase
-    var config = {
-    apiKey: "AIzaSyAvn7BoFuTiM_rbCf5x0IZk7asIcsJl_XE",
-    authDomain: "ghostbusterproject1.firebaseapp.com",
-    databaseURL: "https://ghostbusterproject1.firebaseio.com",
-    storageBucket: "ghostbusterproject1.appspot.com",
-    messagingSenderId: "519386657422"
+  var config = {
+    apiKey: "AIzaSyBUGJXN2wqbdOHO5v-LxQUZS8XkpZtZvgE",
+    authDomain: "math-with-friends-f8d8c.firebaseapp.com",
+    databaseURL: "https://math-with-friends-f8d8c.firebaseio.com",
+    storageBucket: "math-with-friends-f8d8c.appspot.com",
+    messagingSenderId: "175909531949"
   };
-    firebase.initializeApp(config);
+  firebase.initializeApp(config);
     
     /**
      * Handles the sign in button press.

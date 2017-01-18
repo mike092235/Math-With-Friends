@@ -2,7 +2,7 @@
 // Javascript and jQuery goes here
 $("#signOut").on('click',function(event){
         firebase.auth().signOut();
-        window.location.assign("https://js5ghostbusterproject1.herokuapp.com/index.html");
+        window.location.assign("https://afternoon-fortress-64926.herokuapp.com/index.html");
     });
 
 $('#start').on('click', function(){
