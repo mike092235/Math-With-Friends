@@ -12,6 +12,10 @@
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
        <link href="https://fonts.googleapis.com/css?family=Exo:700,800i" rel="stylesheet">
+
+       <!-- animation link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
        <!-- Firebase Reference -->
         <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 
@@ -23,6 +27,7 @@
             <style type="text/css">
             #logo {
               text-align: center;
+              -webkit-animation-duration: 1s;
             }
             .mdl-card__title-text {
               text-align: center;
@@ -71,6 +76,12 @@
             #quickstart-password-reset{
               border:none;
               background-color: transparent;
+            }
+
+            .mdl-cell {
+              -webkit-animation-duration: 1s;
+              /*-webkit-animation-delay: 1s;*/
+          /*    -vendor-animation-iteration-count: infinite;*/
             }
             </style>
 
@@ -145,6 +156,20 @@
       $('.quickstart-user-details-container').hide();
       $('#quickstart-verify-email').hide();
       $('#quickstart-password-reset').hide();
+
+      // animation script added here
+      $.fn.extend({
+          animateCss: function (animationName) {
+              var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+              this.addClass('animated ' + animationName).one(animationEnd, function() {
+                  $(this).removeClass('animated ' + animationName);
+              });
+          }
+      });
+
+
+      $('#logo').animateCss('lightSpeedIn');
+      $('.mdl-cell').animateCss('fadeInUp');
 
   </script>
 </body>

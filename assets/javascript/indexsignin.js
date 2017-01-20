@@ -1,12 +1,13 @@
 // Initialize Firebase
-  var config = {
+    var config = {
     apiKey: "AIzaSyBUGJXN2wqbdOHO5v-LxQUZS8XkpZtZvgE",
     authDomain: "math-with-friends-f8d8c.firebaseapp.com",
     databaseURL: "https://math-with-friends-f8d8c.firebaseio.com",
     storageBucket: "math-with-friends-f8d8c.appspot.com",
     messagingSenderId: "175909531949"
   };
-  firebase.initializeApp(config);
+    firebase.initializeApp(config);
+    console.log(firebase.auth());
 
 /**
      * Handles the sign in button press.
@@ -148,7 +149,7 @@
           }
           //This is where you link the game file. 
 //window.location mean Window is being main parent object for object location of all various script
-          window.location.href = "https://js5ghostbusterproject1.herokuapp.com/mathtrivia.html";
+          window.location.href = "https://afternoon-fortress-64926.herokuapp.com/mathtrivia.html";
           // [END_EXCLUDE]
         } else {
           // User is signed out.

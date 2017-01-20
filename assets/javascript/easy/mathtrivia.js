@@ -34,8 +34,8 @@ var questions = [{
         correctAnswer: "1"
     }, {
         question: "9 - 2 * 11 = x",
-        answers: ["77", "5", "14", "1"],
-        correctAnswer: "77"
+        answers: ["-13", "5", "14", "1"],
+        correctAnswer: "-13"
     }, {
         question: "4(8 + 10) = x",
         answers: ["84", "48", "64", "72"],

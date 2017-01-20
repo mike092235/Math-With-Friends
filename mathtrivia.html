@@ -12,6 +12,10 @@
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
        <link href="https://fonts.googleapis.com/css?family=Exo:700,800i" rel="stylesheet">
+
+       <!-- animation link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
        <!-- Firebase Reference -->
         <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 
@@ -78,7 +82,27 @@
             h4 {
             color:rgb(243,251,255);
             }
-            
+
+            #logo {
+              -webkit-animation-duration: 2s;
+              -webkit-animation-delay: 1s;
+          /*    -vendor-animation-iteration-count: infinite;*/
+            }
+            #subwrapper {
+              -webkit-animation-duration: 2s;
+              /*-webkit-animation-delay: 1s;*/
+          /*    -vendor-animation-iteration-count: infinite;*/
+            }
+            #currentplayer {
+              -webkit-animation-duration: 2s;
+              -webkit-animation-delay: 4s;
+           /*   -webkit-animation-iteration-count: infinite;*/
+            }
+            .selectuser {
+              -webkit-animation-duration: 2s;
+              /*-webkit-animation-delay: 4s;*/
+              -webkit-animation-iteration-count: infinite;
+            }
             </style>
 
         <script type="text/javascript" src="assets/javascript/mathtriviasignin.js"></script>
@@ -87,7 +111,7 @@
 
 <body>
 
-    <div >
+    <div id="logo">
         <h1>MATH <span id="blue">with Friends</span></h1>
     </div>
 
@@ -130,6 +154,23 @@
 <script type="text/javascript" src="assets/javascript/mathtrivia.js"></script>
 <script>
   $('#reset').hide();
+
+  // animation script added here
+      $.fn.extend({
+          animateCss: function (animationName) {
+              var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+              this.addClass('animated ' + animationName).one(animationEnd, function() {
+                  $(this).removeClass('animated ' + animationName);
+              });
+          }
+      });
+
+
+      $('#logo').animateCss('lightSpeedIn');
+      $('#currentplayer').animateCss('flip');
+      $('#subwrapper').animateCss('flipInX');
+      $('.selectuser').animateCss('pulse');
+
 </script>
     
 </body>
