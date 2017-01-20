@@ -1,10 +1,10 @@
 // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBUGJXN2wqbdOHO5v-LxQUZS8XkpZtZvgE",
-    authDomain: "math-with-friends-f8d8c.firebaseapp.com",
-    databaseURL: "https://math-with-friends-f8d8c.firebaseio.com",
-    storageBucket: "math-with-friends-f8d8c.appspot.com",
-    messagingSenderId: "175909531949"
+    apiKey: "AIzaSyBcmxM1ZqFONZnRRt9l6U8KV6XECZKyhLg",
+    authDomain: "math-with-friends-e8deb.firebaseapp.com",
+    databaseURL: "https://math-with-friends-e8deb.firebaseio.com",
+    storageBucket: "math-with-friends-e8deb.appspot.com",
+    messagingSenderId: "923762953914"
   };
   firebase.initializeApp(config);
     
