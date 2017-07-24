@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
+    <meta charset="UTF-8">
+      <title>Math with Friends</title>
+      <!-- Added a link to Bootstrap-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Exo:700,800i" rel="stylesheet">
+      <!-- animation link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <!-- Firebase Reference -->
+      <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+      <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+      <!-- Added link to the jQuery Library --> 
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <style type="text/css">
+          div#currentplayer {
+            display: inline-block;
+            background-color: #f0ad4e;
+            color: #f5f5f5;
+            font-style: bold;
+            font-size: 25px;
+            padding: 18px;
+            border-radius: 10px;
+          }
+          #signOut {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 6px;
+            border: none;
+            background-color: rgb(255,165, 0);
+            border-bottom: 4px solid rgb(209,135, 0);
+            margin-bottom: 20px;
+            margin-left: 8px;
+            float: right;
+          }
+          #start {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 6px;
+            border: none;
+            background-color: rgb(255,165, 0);
+            border-bottom: 4px solid rgb(209,135, 0);
+            margin-bottom: 20px;
+            margin-left: 8px;
+            margin: 0 auto;
+          }
+          #reset{
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 6px;
+            border: none;
+            background-color: rgb(255,165, 0);
+            border-bottom: 4px solid rgb(209,135, 0);
+            margin-bottom: 20px;
+            margin-left: 8px;
+            float: right;
+          }
 
-        <meta charset="UTF-8">
-        <title>Math with Friends</title>
-
-        <!-- Added a link to Bootstrap-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-       <link href="https://fonts.googleapis.com/css?family=Exo:700,800i" rel="stylesheet">
-
-       <!-- animation link -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-       <!-- Firebase Reference -->
-        <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
-
-       <script type="text/javascript" async
-            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
-        <!-- Added link to the jQuery Library --> 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
-            <style type="text/css">
-            div#currentplayer {
-                display: inline-block;
-                background-color: #f0ad4e;
-                color: #f5f5f5;
-                font-style: bold;
-                font-size: 25px;
-                padding: 18px;
-                border-radius: 10px;
-            }
-            #signOut {
-              padding: 10px 20px;
-              cursor: pointer;
-              color: #fff;
-              border-radius: 6px;
-              border: none;
-              background-color: rgb(255,165, 0);
-              border-bottom: 4px solid rgb(209,135, 0);
-              margin-bottom: 20px;
-              margin-left: 8px;
-              float: right;
-            }
-            #start {
-              padding: 10px 20px;
-              cursor: pointer;
-              color: #fff;
-              border-radius: 6px;
-              border: none;
-              background-color: rgb(255,165, 0);
-              border-bottom: 4px solid rgb(209,135, 0);
-              margin-bottom: 20px;
-              margin-left: 8px;
-              margin: 0 auto;
-            }
-            #reset{
-              padding: 10px 20px;
-              cursor: pointer;
-              color: #fff;
-              border-radius: 6px;
-              border: none;
-              background-color: rgb(255,165, 0);
-              border-bottom: 4px solid rgb(209,135, 0);
-              margin-bottom: 20px;
-              margin-left: 8px;
-              float: right;
-            }
-
-            h3 {
-              color:rgb(243,251,255);
-            }
-            
-            h2 {
+          h3 {
             color:rgb(243,251,255);
-            }
+          }
+          
+          h2 {
+          color:rgb(243,251,255);
+          }
 
-            h4 {
-            color:rgb(243,251,255);
-            }
+          h4 {
+          color:rgb(243,251,255);
+          }
 
-            #logo {
-              -webkit-animation-duration: 2s;
-              -webkit-animation-delay: 1s;
-          /*    -vendor-animation-iteration-count: infinite;*/
-            }
-            #subwrapper {
-              -webkit-animation-duration: 2s;
-              /*-webkit-animation-delay: 1s;*/
-          /*    -vendor-animation-iteration-count: infinite;*/
-            }
-            #currentplayer {
-              -webkit-animation-duration: 2s;
-              -webkit-animation-delay: 4s;
-           /*   -webkit-animation-iteration-count: infinite;*/
-            }
-            .selectuser {
-              -webkit-animation-duration: 2s;
-              /*-webkit-animation-delay: 4s;*/
-              -webkit-animation-iteration-count: infinite;
-            }
-            </style>
+          #logo {
+            -webkit-animation-duration: 2s;
+            -webkit-animation-delay: 1s;
+        /*    -vendor-animation-iteration-count: infinite;*/
+          }
+          #subwrapper {
+            -webkit-animation-duration: 2s;
+            /*-webkit-animation-delay: 1s;*/
+        /*    -vendor-animation-iteration-count: infinite;*/
+          }
+          #currentplayer {
+            -webkit-animation-duration: 2s;
+            -webkit-animation-delay: 4s;
+         /*   -webkit-animation-iteration-count: infinite;*/
+          }
+          .selectuser {
+            -webkit-animation-duration: 2s;
+            /*-webkit-animation-delay: 4s;*/
+            -webkit-animation-iteration-count: infinite;
+          }
+          </style>
 
         <script type="text/javascript" src="assets/javascript/mathtriviasignin.js"></script>
     
