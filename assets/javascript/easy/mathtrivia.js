@@ -61,7 +61,7 @@ var questions = [{
         answers: ["11", "1", "3", "9"],
         correctAnswer: "1"
     }, {
-        question: "5 * 5 * 10 = X",
+        question: "10 * 5 * 5 = X",
         answers: ["5", "250", "14", "10"],
         correctAnswer: "250"
     }];
