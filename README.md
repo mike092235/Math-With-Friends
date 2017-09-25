@@ -13,8 +13,6 @@ Score is based on how fast they solve problems and if the problems are solved co
 
 ## Contributors:
 + Michael Emmanuel [github](https://github.com/mike092235)
-+ Jon Salamat [github](https://github.com/jsalamat)
-+ Christopher Walhlers [github](https://github.com/cwahlers)
 
 ## Technologies used:
 + HTML
@@ -26,7 +24,7 @@ Score is based on how fast they solve problems and if the problems are solved co
 + Materialize
 + MathJax
 + Animate.css
-+ [Trello](https://trello.com/b/afMd9uru/ghostbuster-group-project-1)
++ Trello
 
 ## Feature:
 + Firebase.auth  is applied to have a login and authentication for particular user that is current in the Math with Friends App.
